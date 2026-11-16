@@ -12,7 +12,7 @@ def dijkstra(graph, start):
       if new_distance < distances[neighbor]:
         distances[neighbor] = new_distance
         heapq.heappush(priority_queue, (new_distance, neighbor))
-    return distances
+  return distances
 
 if __name__ == "__main__":
   example_graph = {
